@@ -14,17 +14,19 @@ public class main {
     //举例子：1到3之间相乘
     public static void main(String[] args) {
 
-      int a = xiangcheng(1,3);
+      int a = xiangcheng(1,1);
         System.out.println(a);
     }
     public static int xiangcheng(int start ,int end){
         //递归方法的出口
         if (start==end){
             return end;
-        }
-        //递归方法的调用
+        }else {
+            //递归方法的调用
 //        每次调用都要缩小范围
-        return start*xiangcheng(start+1,end);
+            return start*xiangcheng(start+1,end);
+        }
+
     }
 
 }
